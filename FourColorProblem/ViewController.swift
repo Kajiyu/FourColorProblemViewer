@@ -9,25 +9,36 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var cell0: UIView!
+    @IBOutlet weak var cell1: UIView!
+    @IBOutlet weak var cell2: UIView!
+    @IBOutlet weak var cell3: UIView!
+    @IBOutlet weak var cell4: UIView!
+    @IBOutlet weak var cell5: UIView!
+    @IBOutlet weak var cell6: UIView!
+    @IBOutlet weak var cell7: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let region0 : Region = Region(_index: 0, _neighbors: [1,2,3,5,10,11])
-        let region1 : Region = Region(_index: 1, _neighbors: [0,3,4,8,11])
-        let region2 : Region = Region(_index: 2, _neighbors: [0,3,5,6])
-        let region3 : Region = Region(_index: 3, _neighbors: [0,1,2,4,6,7])
-        let region4 : Region = Region(_index: 4, _neighbors: [1,3,7,8])
-        let region5 : Region = Region(_index: 5, _neighbors: [0,2,6,9,10])
-        let region6 : Region = Region(_index: 6, _neighbors: [2,3,5,7,9])
-        let region7 : Region = Region(_index: 7, _neighbors: [3,4,6,8,9])
-        let region8 : Region = Region(_index: 8, _neighbors: [1,4,7,9,11])
-        let region9 : Region = Region(_index: 9, _neighbors: [5,6,7,8,10,11])
-        let region10 : Region = Region(_index: 10, _neighbors: [0,5,9,11])
-        let region11 : Region = Region(_index: 11, _neighbors: [0,1,8,9,10])
-        var regions : [Region] = [region0, region1, region2, region3, region4, region5, region6, region7, region8, region9, region10, region11]
+        var cells : [UIView] = [cell0, cell1, cell2, cell3, cell4, cell5, cell6, cell7]
+        let region0 : Region = Region(_index: 0, _neighbors: [1,2,4,5,6,7])
+        let region1 : Region = Region(_index: 1, _neighbors: [0,2,3,4,5])
+        let region2 : Region = Region(_index: 2, _neighbors: [0,1,3,6])
+        let region3 : Region = Region(_index: 3, _neighbors: [1,2,4,6])
+        let region4 : Region = Region(_index: 4, _neighbors: [0,1,3,5,6,7])
+        let region5 : Region = Region(_index: 5, _neighbors: [0,1,4])
+        let region6 : Region = Region(_index: 6, _neighbors: [0,2,3,4,7])
+        let region7 : Region = Region(_index: 7, _neighbors: [0,4,6])
+        var regions : [Region] = [region0, region1, region2, region3, region4, region5, region6, region7]
         var calculator : Calculation = Calculation(_regions: regions)
         calculator.search(0)
+        var i : Int = 0
+        for region in regions {
+            cells[i].backgroundColor = region.color
+            i = i + 1
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -14,13 +14,67 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PK4-u2-RgQ">
+                                <rect key="frame" x="155" y="88" width="179" height="410"/>
+                                <color key="backgroundColor" red="0.059913793103448278" green="0.098706896551724141" blue="0.76767241379310347" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PL2-KY-uoi">
+                                <rect key="frame" x="41" y="88" width="117" height="410"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hWT-IZ-KAO">
+                                <rect key="frame" x="242" y="137" width="72" height="268"/>
+                                <color key="backgroundColor" red="1" green="0.42874461209999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n5r-lP-p5i">
+                                <rect key="frame" x="74" y="258" width="168" height="127"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.46524784482758619" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oe5-Kp-ieY">
+                                <rect key="frame" x="171" y="190" width="131" height="68"/>
+                                <color key="backgroundColor" red="0.53709590517241379" green="1" blue="0.46524784479999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TaJ-Y7-o4O">
+                                <rect key="frame" x="88" y="88" width="141" height="102"/>
+                                <color key="backgroundColor" red="0.26769935344827589" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6bK-zm-GGZ">
+                                <rect key="frame" x="139" y="148" width="70" height="143"/>
+                                <color key="backgroundColor" red="1" green="0.42874461206896552" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="526-Ss-bDw">
+                                <rect key="frame" x="105" y="385" width="113" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.42874461209999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cell0" destination="PK4-u2-RgQ" id="PpG-Jq-eaa"/>
+                        <outlet property="cell1" destination="PL2-KY-uoi" id="L2C-If-b0i"/>
+                        <outlet property="cell2" destination="TaJ-Y7-o4O" id="rUA-eO-dbl"/>
+                        <outlet property="cell3" destination="6bK-zm-GGZ" id="CC8-Sf-fOz"/>
+                        <outlet property="cell4" destination="n5r-lP-p5i" id="FdZ-xe-sHG"/>
+                        <outlet property="cell5" destination="526-Ss-bDw" id="98z-DQ-Fmv"/>
+                        <outlet property="cell6" destination="oe5-Kp-ieY" id="v9f-5o-XQX"/>
+                        <outlet property="cell7" destination="hWT-IZ-KAO" id="CBn-4p-L8K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="339.5" y="319.5"/>
         </scene>
     </scenes>
 </document>
